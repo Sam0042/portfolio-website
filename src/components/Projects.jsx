@@ -4,47 +4,47 @@ const Projects = () => {
   const projects = [
     {
       title: 'Portfolio Website',
-      description: 'Website portofolio pribadi modern responsif penuh, dan animasi halus.',
+      description: 'Website portofolio pribadi yang berisi kumpulan portofolio, keahlian, pengenalan diri, dan kontak.',
       image: '💼',
       tech: ['React', 'Vite', 'Tailwind CSS'],
-      demoLink: '#',
+      demoLink: '/',
       codeLink: 'https://github.com/Sam0042/portfolio-website.git',
       domain: 'Front-end',
       category: 'Personal Project'
     },
     {
-      title: 'Management Information System: Roudhotul Jannah Mosque',
-      description: 'Website portofolio pribadi modern responsif penuh, dan animasi halus.',
+      title: 'Sistem Informasi Manajemen Masjid Jami Roudhotul Jannah',
+      description: 'Sistem Informasi Manajemen yang dikembangkan dengan tujuan membantu pencatatan keuangan dan kegiatan masjid.',
       image: '🕌',
       tech: ['Laravel', 'MySQL', 'MariaDB', 'Bootstrap', 'Figma'],
-      demoLink: '#',
-      codeLink: 'https://github.com/Sam0042/portfolio-website.git',
+      demoLink: '',
+      codeLink: 'https://github.com/Sam0042/sim-masjid-dummy.git',
       domain: 'Full Stack',
       category: 'Proyek Skripsi'
     },
     {
       title: 'RestfulAPI: Covid Patients Data (ExpressJS)',
-      description: 'Website portofolio pribadi modern responsif penuh, dan animasi halus.',
+      description: 'RestfulAPI yang berisi data pasien yang dibangun menggunakan ExpressJS.',
       image: '📊',
       tech: ['Express.js', 'MySQL', 'JWT', 'Restful API'],
-      demoLink: '#',
+      demoLink: '',
       codeLink: 'https://github.com/Sam0042/covid-rest-api.git',
       domain: 'Back-end',
       category: 'Tugas Kuliah'
     },
     {
       title: 'RestfulAPI: Covid Patients Data (Laravel)',
-      description: 'Website portofolio pribadi modern responsif penuh, dan animasi halus.',
+      description: 'RestfulAPI yang berisi data pasien yang dibangun menggunakan Laravel.',
       image: '📊',
       tech: ['Express.js', 'MySQL', 'Restful API'],
-      demoLink: '#',
+      demoLink: '',
       codeLink: 'https://github.com/Sam0042/be-mid-project.git',
       domain: 'Back-end',
       category: 'Tugas Kuliah'
     },
     {
       title: 'Covid Monitoring Website: Covidout',
-      description: 'Aplikasi eksplorasi film modern berbasis React. Memungkinkan pengguna menambah film dan menjelajah film populer dengan antarmuka yang responsif dan interaktif yang diambil dari API IMDB.',
+      description: 'Aplikasi eksplorasi monitoring total penebaran covid di Indonesia, menggunakan data yang difetch melalui API public.',
       image: '🏥',
       tech: ['React', 'Fetching API'],
       demoLink: 'https://covidout-app-sam0042.vercel.app//',
@@ -54,7 +54,7 @@ const Projects = () => {
     },
     {
       title: 'Movie Website: Moviequ',
-      description: 'Aplikasi eksplorasi film modern berbasis React. Memungkinkan pengguna menambah film dan menjelajah film populer dengan antarmuka yang responsif dan interaktif yang diambil dari API IMDB.',
+      description: 'Aplikasi eksplorasi film modern berbasis React. Memungkinkan pengguna menambah film dan menjelajah film populer dengan antarmuka yang responsif dan interaktif yang diambil dari API IMDB. ',
       image: '🎬',
       tech: ['React', 'Fetching API'],
       demoLink: 'https://movie-database-sam0042.vercel.app/',
@@ -123,12 +123,14 @@ const Projects = () => {
               </div>
 
               <div className="px-6 pb-6 pt-0 flex items-center gap-4">
-                <a
-                  href={project.demoLink} target='blank'
-                  className="flex-1 text-center py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold transition-all duration-200 shadow-sm shadow-blue-500/20"
-                >
-                  Live Demo
-                </a>
+                {
+                  project.demoLink && <a
+                    href={project.demoLink} target='blank'
+                    className="flex-1 text-center py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold transition-all duration-200 shadow-sm shadow-blue-500/20"
+                  >
+                    Live Demo
+                  </a>
+                }
                 <a
                   href={project.codeLink} target='blank'
                   className="flex-1 text-center py-2.5 rounded-xl bg-slate-200/70 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-sm font-semibold transition-all duration-200"
