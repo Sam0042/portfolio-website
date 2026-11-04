@@ -10,6 +10,7 @@ const Projects = () => {
       demoLink: '#',
       codeLink: 'https://github.com/Sam0042/portfolio-website.git',
       domain: 'Front-end',
+      category: 'Personal Project'
     },
     {
       title: 'Management Information System: Roudhotul Jannah Mosque',
@@ -19,6 +20,7 @@ const Projects = () => {
       demoLink: '#',
       codeLink: 'https://github.com/Sam0042/portfolio-website.git',
       domain: 'Full Stack',
+      category: 'Proyek Skripsi'
     },
     {
       title: 'RestfulAPI: Covid Patients Data (ExpressJS)',
@@ -28,6 +30,7 @@ const Projects = () => {
       demoLink: '#',
       codeLink: 'https://github.com/Sam0042/covid-rest-api.git',
       domain: 'Back-end',
+      category: 'Tugas Kuliah'
     },
     {
       title: 'RestfulAPI: Covid Patients Data (Laravel)',
@@ -37,24 +40,27 @@ const Projects = () => {
       demoLink: '#',
       codeLink: 'https://github.com/Sam0042/be-mid-project.git',
       domain: 'Back-end',
+      category: 'Tugas Kuliah'
     },
     {
       title: 'Covid Monitoring Website: Covidout',
       description: 'Aplikasi eksplorasi film modern berbasis React. Memungkinkan pengguna menambah film dan menjelajah film populer dengan antarmuka yang responsif dan interaktif yang diambil dari API IMDB.',
       image: '🏥',
-      tech: ['React', 'API'],
+      tech: ['React', 'Fetching API'],
       demoLink: 'https://covidout-app-sam0042.vercel.app//',
       codeLink: 'https://github.com/Sam0042/frontend-programming-uas.git',
       domain: 'Front-end',
+      category: 'Tugas Kuliah'
     },
     {
       title: 'Movie Website: Moviequ',
       description: 'Aplikasi eksplorasi film modern berbasis React. Memungkinkan pengguna menambah film dan menjelajah film populer dengan antarmuka yang responsif dan interaktif yang diambil dari API IMDB.',
       image: '🎬',
-      tech: ['React', 'API'],
+      tech: ['React', 'Fetching API'],
       demoLink: 'https://movie-database-sam0042.vercel.app/',
       codeLink: 'https://github.com/Sam0042/frontend-programming-Sam0042.git',
       domain: 'Front-end',
+      category: 'Tugas Kuliah'
     },
   ];
 
@@ -71,7 +77,7 @@ const Projects = () => {
           <div className="w-12 h-1 bg-blue-600 dark:bg-blue-500 mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div
               key={project.title}
@@ -99,26 +105,32 @@ const Projects = () => {
                     ))}
                   </div>
 
-
-                  <span
-                    key={project.domain}
-                    className="px-3 py-1.5 text-sm font-semibold rounded-md bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-800/60"
-                  >
-                    {project.domain}
-                  </span>
-
+                  <div className='flex flex-wrap gap-2 mb-6'>
+                    <span
+                      key={project.domain}
+                      className="px-3 py-1.5 text-sm font-semibold rounded-md bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-800/60"
+                    >
+                      {project.domain}
+                    </span>
+                    <span
+                      key={project.category}
+                      className="px-3 py-1.5 text-sm font-semibold rounded-md bg-purple-50 dark:bg-purple-950/60 text-purple-600 dark:text-purple-300 border border-purple-200/60 dark:border-purple-800/60"
+                    >
+                      {project.category}
+                    </span>
+                  </div>
                 </div>
               </div>
 
               <div className="px-6 pb-6 pt-0 flex items-center gap-4">
                 <a
-                  href={project.demoLink}
+                  href={project.demoLink} target='blank'
                   className="flex-1 text-center py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold transition-all duration-200 shadow-sm shadow-blue-500/20"
                 >
                   Live Demo
                 </a>
                 <a
-                  href={project.codeLink}
+                  href={project.codeLink} target='blank'
                   className="flex-1 text-center py-2.5 rounded-xl bg-slate-200/70 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-sm font-semibold transition-all duration-200"
                 >
                   Source Code

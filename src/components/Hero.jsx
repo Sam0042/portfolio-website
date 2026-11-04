@@ -10,21 +10,20 @@ const Hero = () => {
         {/* Status Badge */}
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800/80 text-blue-600 dark:text-blue-300 text-xs sm:text-sm font-medium mb-8 transition-transform duration-300 hover:scale-105">
           <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          <span>Tersedia untuk Proyek Baru & Kolaborasi</span>
+          <span>Open for Full-time & Internship Opportunities</span>
         </div>
 
         {/* Heading */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6">
-          Membangun Solusi Web{' '}
-          <span className="bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent">
-            Modern & Cepat
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6 leading-tight">
+          Halo, Saya Hisyam <span className="inline-block animate-wave">👋</span>
+          <span className="block mt-2 text-3xl sm:text-4xl md:text-5xl bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 dark:from-blue-400 dark:via-indigo-400 dark:to-cyan-400 bg-clip-text text-transparent">
+            Full-Stack Web Developer
           </span>
         </h1>
 
         {/* Subtitle */}
         <p className="text-base sm:text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-          Halo, saya Full-Stack & Frontend Developer. Berfokus merancang antarmuka elegan,
-          performa tinggi, dan pengalaman pengguna yang luar biasa.
+          Lulusan Teknik Informatika (S.Kom) yang berfokus pada pengembangan aplikasi web modern. Menguasai Laravel, React, dan Tailwind CSS untuk membangun antarmuka yang intuitif serta arsitektur backend yang andal.
         </p>
 
         {/* CTA Buttons */}

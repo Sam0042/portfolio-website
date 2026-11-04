@@ -50,9 +50,7 @@ const About = () => {
           {/* Description & Stats */}
           <div className="md:col-span-7">
             <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
-              Saya adalah seorang Web Developer enthusiasm dengan ketertarikan kuat dalam membangun
-              antarmuka modern yang cepat, intuitif, dan ramah pengguna. Menggabungkan estetika
-              desain bersih dengan arsitektur kode yang skalabel dan mudah dipelihara.
+              Saya adalah lulusan sarjana komputer (S.Kom) jurusan teknik informatika dengan IPK 3.69/4.00 dan predikat sangat memuaskan di Sekolah Tinggi Teknologi Terpadu Nurul Fikri, saya memiliki fondasi rekayasa perangkat lunak yang kuat serta pemahaman mendalam terkait pengembangan web modern. Saat ini, saya aktif mengasah keterampilan dalam membangun ekosistem aplikasi web yang efisien, mulai dari pengembangan sisi frontend hingga perancangan sistem backend yang andal. Saya selalu bersemangat untuk mengubah kompleksitas logika pemrograman menjadi solusi digital yang solutif dan memberikan pengalaman pengguna terbaik.
             </p>
 
             {/* Stat Cards */}

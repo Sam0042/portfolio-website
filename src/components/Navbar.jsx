@@ -36,7 +36,7 @@ const Navbar = ({ theme, toggleTheme }) => {
           </div>
 
           <div className="flex items-center space-x-2">
-            {/* <button
+            <button
               onClick={toggleTheme}
               type="button"
               aria-label={theme === 'dark' ? 'Mode Terang' : 'Mode Gelap'}
@@ -53,7 +53,7 @@ const Navbar = ({ theme, toggleTheme }) => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                 </svg>
               )}
-            </button> */}
+            </button>
 
             <button
               onClick={() => setIsOpen(!isOpen)}
