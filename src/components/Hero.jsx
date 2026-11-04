@@ -2,26 +2,54 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section id="home" className="pt-32 pb-20 px-4">
-      <div className="max-w-6xl mx-auto text-center">
-        <div className="inline-block px-4 py-1 rounded-full bg-blue-100 text-blue-600 text-sm font-medium mb-6 animate-bounce">
-          Web Developer & Designer
+    <section id="home" className="relative pt-32 pb-20 md:pt-40 md:pb-28 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      {/* Subtle background glow */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-500/10 dark:bg-blue-500/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+      <div className="max-w-4xl mx-auto text-center">
+        {/* Status Badge */}
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800/80 text-blue-600 dark:text-blue-300 text-xs sm:text-sm font-medium mb-8 transition-transform duration-300 hover:scale-105">
+          <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span>Tersedia untuk Proyek Baru & Kolaborasi</span>
         </div>
-        <h1 className="text-5xl md:text-7xl font-extrabold mb-6">
-          Halo, Saya{' '}
-          <span className="text-blue-600">Web Developer</span>
+
+        {/* Heading */}
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6">
+          Membangun Solusi Web{' '}
+          <span className="bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent">
+            Modern & Cepat
+          </span>
         </h1>
-        <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-          Membangun pengalaman digital yang modern, responsif, dan berdampak positif
-          untuk pengguna dengan teknologi terbaru.
+
+        {/* Subtitle */}
+        <p className="text-base sm:text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+          Halo, saya Full-Stack & Frontend Developer. Berfokus merancang antarmuka elegan,
+          performa tinggi, dan pengalaman pengguna yang luar biasa.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="#projects" className="px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg shadow-blue-200">
-            Lihat Proyek
+
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a
+            href="#projects"
+            className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm sm:text-base shadow-lg shadow-blue-500/25 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl active:scale-95 text-center"
+          >
+            Lihat Proyek Saya
           </a>
-          <a href="#contact" className="px-8 py-3 border border-gray-300 text-gray-700 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+          <a
+            href="#contact"
+            className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 font-semibold text-sm sm:text-base transition-all duration-300 hover:-translate-y-1 active:scale-95 text-center"
+          >
             Hubungi Saya
           </a>
+        </div>
+
+        {/* Tech stack highlights */}
+        <div className="mt-14 pt-8 border-t border-slate-200/80 dark:border-slate-800/80 flex flex-wrap items-center justify-center gap-6 sm:gap-8 text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400">
+          <span className="text-slate-400 dark:text-slate-500">Tech Stack:</span>
+          <span className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Laravel</span>
+          <span className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Vite</span>
+          <span className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Tailwind CSS</span>
+          <span className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">React</span>
         </div>
       </div>
     </section>

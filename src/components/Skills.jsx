@@ -1,52 +1,67 @@
 import React from 'react';
 
+const SkillCard = ({ title, icon, skills }) => (
+  <div className="p-6 sm:p-7 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:border-blue-500/40 dark:hover:border-blue-500/40">
+    <div className="flex items-center gap-3.5 mb-5">
+      <div className="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-950/60 border border-blue-200/60 dark:border-blue-800/60 flex items-center justify-center text-2xl text-blue-600 dark:text-blue-400">
+        {icon}
+      </div>
+      <div>
+        <h3 className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
+          {title}
+        </h3>
+        <p className="text-xs text-slate-500 dark:text-slate-400">Teknologi & Framework</p>
+      </div>
+    </div>
+    <div className="flex flex-wrap gap-2">
+      {skills.map((skill) => (
+        <span
+          key={skill}
+          className="px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/60 dark:border-slate-700/60 transition-colors duration-200 hover:bg-blue-50 hover:text-blue-600 dark:hover:bg-blue-950/50 dark:hover:text-blue-400"
+        >
+          {skill}
+        </span>
+      ))}
+    </div>
+  </div>
+);
+
 const Skills = () => {
+  const categories = [
+    {
+      title: 'Frontend Development',
+      icon: '🎨',
+      skills: ['React.js', 'Vite', 'Tailwind CSS', 'JavaScript (ES6+)', 'HTML5 & CSS3', 'Responsive Design'],
+    },
+    {
+      title: 'Backend & Database',
+      icon: '⚡',
+      skills: ['Laravel', 'PHP', 'MySQL', 'Node.js', 'Express.js', 'RESTful APIs', 'Authentication / JWT'],
+    },
+    {
+      title: 'Tools & DevOps',
+      icon: '🛠️',
+      skills: ['Figma', 'Git & GitHub', 'VS Code', 'Postman', 'npm / yarn', 'Vercel'],
+    },
+  ];
+
   return (
-    <section id="skills" className="py-20 px-4 bg-gray-50">
+    <section id="skills" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Keahlian</h2>
-          <div className="w-16 h-1 bg-blue-600 mx-auto"></div>
+        <div className="text-center max-w-2xl mx-auto mb-16">
+          <span className="text-xs sm:text-sm font-semibold tracking-wider uppercase text-blue-600 dark:text-blue-400">
+            Keahlian & Kemampuan
+          </span>
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 dark:text-white mt-2 mb-4">
+            Teknologi yang Dikuasai
+          </h2>
+          <div className="w-12 h-1 bg-blue-600 dark:bg-blue-500 mx-auto rounded-full"></div>
         </div>
-        <div className="grid grid-cols-2 gap-6">
-          <div className="p-6 bg-white rounded-xl shadow-sm">
-            <h3 className="text-2xl font-bold mb-2 text-blue-600">Frontend Development</h3>
-            <ul className="space-y-2 text-gray-600 text-sm">
-              <li className="flex items-start">
-                <svg className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7l7 9z"></path></svg>
-                React.js
-              </li>
-              <li className="flex items-start">
-                <svg className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7l7 9z"></path></svg>
-                HTML/CSS
-              </li>
-              <li className="flex items-start">
-                <svg className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7l7 9z"></path></svg>
-                JavaScript
-              </li>
-              <li className="flex items-start">
-                <svg className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7l7 9z"></path></svg>
-                Tailwind CSS
-              </li>
-            </ul>
-          </div>
-          <div className="p-6 bg-white rounded-xl shadow-sm">
-            <h3 className="text-2xl font-bold mb-2 text-blue-600">Backend Development</h3>
-            <ul className="space-y-2 text-gray-600 text-sm">
-              <li className="flex items-start">
-                <svg className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7l7 9z"></path></svg>
-                Node.js
-              </li>
-              <li className="flex items-start">
-                <svg className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7l7 9z"></path></svg>
-                Express.js
-              </li>
-              <li className="flex items-start">
-                <svg className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7l7 9z"></path></svg>
-                MongoDB
-              </li>
-            </ul>
-          </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {categories.map((cat) => (
+            <SkillCard key={cat.title} title={cat.title} icon={cat.icon} skills={cat.skills} />
+          ))}
         </div>
       </div>
     </section>
