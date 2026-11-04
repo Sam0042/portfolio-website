@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center space-x-2">
           <span className="text-xl font-bold tracking-tight text-blue-600 dark:text-blue-400">
-            Portfolio<span className="text-slate-400">.</span>
+            hisyammubarak<span className="text-slate-400">.</span>
           </span>
           <span className="text-sm text-slate-500 dark:text-slate-400">
             © {new Date().getFullYear()} All rights reserved.

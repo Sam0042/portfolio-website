@@ -10,7 +10,7 @@ const Hero = () => {
         {/* Status Badge */}
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800/80 text-blue-600 dark:text-blue-300 text-xs sm:text-sm font-medium mb-8 transition-transform duration-300 hover:scale-105">
           <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          <span>Open for Full-time & Internship Opportunities</span>
+          <span>Open for Projects & Collaboration</span>
         </div>
 
         {/* Heading */}

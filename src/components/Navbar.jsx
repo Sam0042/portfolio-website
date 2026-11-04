@@ -19,7 +19,7 @@ const Navbar = ({ theme, toggleTheme }) => {
             href="#home"
             className="text-2xl font-bold tracking-tight text-blue-600 dark:text-blue-400 flex items-center gap-1.5"
           >
-            <span>DevPortfolio</span>
+            <span>hisyammubarak</span>
             <span className="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400"></span>
           </a>
 
