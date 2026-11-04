@@ -1,0 +1,13 @@
+# Impeccable Skill & Quality Standards
+
+## Design & UI Guidelines
+1. Spacing & Grid: Gunakan sistem spacing konsisten (skala 4/8px dari Tailwind: p-4, gap-6, py-12/16).
+2. Typography: Gunakan hierarchy teks yang jelas. Heading bold/semibold dengan tracking tight, body text readable (text-slate-600 / dark:text-slate-300).
+3. Color Palette: Maksimal 3 warna utama (Primary, Neutral, Accent). Pastikan kontras warna memenuhi standar accessibility (WCAG AA).
+4. Responsiveness: Desain wajib Mobile-First. Cek breakpoint sm, md, lg, dan xl agar tidak ada layout overflow/horizontal scroll.
+5. Micro-interactions: Tambahkan smooth transition (`transition-all duration-300`), hover state yang halus pada tombol/card (`hover:-translate-y-1 hover:shadow-lg`), dan focus outline untuk aksesibilitas.
+6. Dark Mode: Dukung dark mode yang kontras dan nyaman di mata (`bg-slate-900 text-slate-100`).
+
+## Code Structure Guidelines
+1. Modularity: Pecah komponen besar menjadi komponen-komponen kecil yang reusable (misal: `ProjectCard`, `SkillBadge`, `Button`).
+2. Clean Code: Hapus unused imports, kurangi redundansi class Tailwind, dan pastikan file komponen rapi.
