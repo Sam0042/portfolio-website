@@ -19,7 +19,7 @@ const Projects = () => {
       tech: ['Laravel', 'MySQL', 'MariaDB', 'Bootstrap', 'Figma'],
       demoLink: '',
       codeLink: 'https://github.com/Sam0042/sim-masjid-dummy.git',
-      domain: 'Full Stack',
+      domain: 'Full-Stack',
       category: 'Proyek Skripsi'
     },
     {
@@ -77,7 +77,7 @@ const Projects = () => {
           <div className="w-12 h-1 bg-blue-600 dark:bg-blue-500 mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div
               key={project.title}
@@ -133,6 +133,81 @@ const Projects = () => {
                 }
                 <a
                   href={project.codeLink} target='blank'
+                  className="flex-1 text-center py-2.5 rounded-xl bg-slate-200/70 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-sm font-semibold transition-all duration-200"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+          ))}
+        </div> */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project) => (
+            <div
+              key={project.title}
+              className="group bg-slate-50 dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:border-blue-500/40 dark:hover:border-blue-500/40 flex flex-col justify-between"
+            >
+              <div>
+                {/* Banner Pengganti Foto/Ikon */}
+                <div className="h-44 w-full bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-950 p-6 flex flex-col justify-between relative overflow-hidden border-b border-slate-200/60 dark:border-slate-800">
+                  {/* Pola Dot Grid */}
+                  <div className="absolute inset-0 opacity-15 bg-[radial-gradient(#38bdf8_1px,transparent_1px)] [background-size:16px_16px]"></div>
+
+                  {/* Baris Atas Banner: Domain & Category */}
+                  <div className="z-10 flex items-center justify-between gap-2">
+                    <span className="px-2.5 py-1 text-xs font-semibold rounded-md bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 backdrop-blur-md">
+                      {project.domain}
+                    </span>
+                    <span className="px-2.5 py-1 text-xs font-semibold rounded-md bg-purple-500/10 text-purple-300 border border-purple-500/20 backdrop-blur-md">
+                      {project.category}
+                    </span>
+                  </div>
+
+                  {/* Judul Proyek di dalam Banner */}
+                  <div className="z-10">
+                    <h3 className="text-lg font-bold text-white tracking-tight group-hover:text-blue-400 transition-colors">
+                      {project.title}
+                    </h3>
+
+                  </div>
+                </div>
+
+                {/* Konten Utama Card */}
+                <div className="p-6 sm:p-7">
+                  <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 mb-5 leading-relaxed ">
+                    {project.description}
+                  </p>
+
+                  {/* Tech Stack */}
+                  <div className="flex flex-wrap gap-2">
+                    {project.tech.map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-2.5 py-1 text-xs font-semibold rounded-md bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-300 border border-blue-200/60 dark:border-blue-800/60"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Tombol Aksi (Button) */}
+              <div className="px-6 pb-6 pt-0 flex items-center gap-4">
+                {project.demoLink && (
+                  <a
+                    href={project.demoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 text-center py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold transition-all duration-200 shadow-sm shadow-blue-500/20"
+                  >
+                    Live Demo
+                  </a>
+                )}
+                <a
+                  href={project.codeLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex-1 text-center py-2.5 rounded-xl bg-slate-200/70 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-sm font-semibold transition-all duration-200"
                 >
                   Source Code

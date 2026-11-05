@@ -23,7 +23,7 @@ const Hero = () => {
 
         {/* Subtitle */}
         <p className="text-base sm:text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-          Lulusan Teknik Informatika (S.Kom) yang berfokus pada pengembangan aplikasi web modern. Menguasai Laravel, React, dan Tailwind CSS untuk membangun antarmuka yang intuitif serta arsitektur backend yang andal.
+          Lulusan Teknik Informatika (S.Kom) yang berfokus pada pengembangan aplikasi web modern.
         </p>
 
         {/* CTA Buttons */}
@@ -42,14 +42,7 @@ const Hero = () => {
           </a>
         </div>
 
-        {/* Tech stack highlights */}
-        <div className="mt-14 pt-8 border-t border-slate-200/80 dark:border-slate-800/80 flex flex-wrap items-center justify-center gap-6 sm:gap-8 text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400">
-          <span className="text-slate-400 dark:text-slate-500">Tech Stack:</span>
-          <span className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Laravel</span>
-          <span className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Vite</span>
-          <span className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Tailwind CSS</span>
-          <span className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">React</span>
-        </div>
+
       </div>
     </section>
   );

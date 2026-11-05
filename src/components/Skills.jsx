@@ -10,7 +10,7 @@ const SkillCard = ({ title, icon, skills }) => (
         <h3 className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
           {title}
         </h3>
-        <p className="text-xs text-slate-500 dark:text-slate-400">Teknologi & Framework</p>
+
       </div>
     </div>
     <div className="flex flex-wrap gap-2">
@@ -31,7 +31,7 @@ const Skills = () => {
     {
       title: 'Frontend Development',
       icon: '🎨',
-      skills: ['React.js', 'Vite', 'Tailwind CSS', 'JavaScript (ES6+)', 'HTML5 & CSS3', 'Responsive Design'],
+      skills: ['React.js', 'Vite', 'Tailwind CSS', 'JavaScript', 'HTML5 & CSS3', 'Responsive Design'],
     },
     {
       title: 'Backend & Database',
@@ -53,7 +53,7 @@ const Skills = () => {
             Keahlian & Kemampuan
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 dark:text-white mt-2 mb-4">
-            Teknologi yang Dikuasai
+            Teknologi & Framework yang Dikuasai
           </h2>
           <div className="w-12 h-1 bg-blue-600 dark:bg-blue-500 mx-auto rounded-full"></div>
         </div>
