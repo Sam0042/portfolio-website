@@ -16,11 +16,21 @@ const Projects = () => {
       title: 'Sistem Informasi Manajemen Masjid Jami Roudhotul Jannah',
       description: 'Sistem Informasi Manajemen yang dikembangkan dengan tujuan membantu pencatatan keuangan dan kegiatan masjid.',
       image: '🕌',
-      tech: ['Laravel', 'MySQL', 'MariaDB', 'Bootstrap', 'Figma'],
+      tech: ['Laravel', 'MySQL', 'Bootstrap', 'Figma'],
       demoLink: '',
       codeLink: 'https://github.com/Sam0042/sim-masjid-dummy.git',
       domain: 'Full-Stack',
       category: 'Proyek Skripsi'
+    },
+    {
+      title: 'Website Sekolah: SMK Nasional Depok',
+      description: 'Project website sekolah yang dibangun saat uji sertifikasi BNSP bidang Junior Web Developer.',
+      image: '🏫',
+      tech: ['Laravel', 'MySQL'],
+      demoLink: '',
+      codeLink: 'https://github.com/Sam0042/web-sekolah.git',
+      domain: 'Full-Stack',
+      category: 'Proyek Tes BNSP'
     },
     {
       title: 'RestfulAPI: Covid Patients Data (ExpressJS)',
