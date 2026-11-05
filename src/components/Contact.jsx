@@ -54,7 +54,7 @@ const Contact = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm sm:text-base shadow-lg shadow-blue-500/25 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl active:scale-95"
           >
-            Kirim Email Sekarang →
+            Kirim Email Sekarang
           </a>
         </div>
       </div>
