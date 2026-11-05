@@ -8,6 +8,7 @@ const Navbar = ({ theme, toggleTheme }) => {
     { name: 'Tentang', href: '#about' },
     { name: 'Keahlian', href: '#skills' },
     { name: 'Proyek', href: '#projects' },
+    { name: 'Social', href: '#social' },
     { name: 'Kontak', href: '#contact' },
   ];
 
