@@ -3,6 +3,16 @@ import React from 'react';
 const Projects = () => {
   const projects = [
     {
+      title: 'Youtube Homepage Clone',
+      description: 'Cloning Youtube dengan implementasi Rest API',
+      image: '▶',
+      tech: ['React', 'Vite', 'Tailwind CSS', 'Express JS', 'RestAPI'],
+      demoLink: 'https://youtube-clone-frontend-mocha-iota.vercel.app/',
+      codeLink: 'https://github.com/Sam0042/youtube-clone',
+      domain: 'Full-stack',
+      category: 'Personal Project'
+    },
+    {
       title: 'Portfolio Website',
       description: 'Website portofolio pribadi yang berisi kumpulan portofolio, keahlian, pengenalan diri, dan kontak.',
       image: '💼',
