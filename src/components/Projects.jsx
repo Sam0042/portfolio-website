@@ -3,6 +3,16 @@ import React from 'react';
 const Projects = () => {
   const projects = [
     {
+      title: 'Nontons: Movies Website',
+      description: 'Website yang berisi kumpulan film yang diambil dari API TMDB',
+      image: '▶',
+      tech: ['React', 'Vite', 'Tailwind CSS'],
+      demoLink: 'https://nontons.vercel.app/',
+      codeLink: 'https://github.com/Sam0042/youtube-clone',
+      domain: 'Full-stack',
+      category: 'Personal Project'
+    },
+    {
       title: 'Youtube Homepage Clone',
       description: 'Cloning Youtube dengan implementasi Rest API',
       image: '▶',
