@@ -16,9 +16,6 @@ const Hero = () => {
         {/* Heading */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6 leading-tight">
           Halo, Saya Hisyam <span className="inline-block animate-wave">👋</span>
-          <span className="block mt-2 text-3xl sm:text-4xl md:text-5xl bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 dark:from-blue-400 dark:via-indigo-400 dark:to-cyan-400 bg-clip-text text-transparent">
-            Full-Stack Web Developer
-          </span>
         </h1>
 
         {/* Subtitle */}
