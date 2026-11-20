@@ -6,8 +6,7 @@ const Navbar = ({ theme, toggleTheme }) => {
   const navLinks = [
     { name: 'Beranda', href: '#home' },
     { name: 'Tentang', href: '#about' },
-    { name: 'Keahlian', href: '#skills' },
-    { name: 'Proyek', href: '#projects' },
+    { name: 'Project', href: '#projects' },
     { name: 'Social', href: '#social' },
     { name: 'Kontak', href: '#contact' },
   ];
@@ -29,7 +28,7 @@ const Navbar = ({ theme, toggleTheme }) => {
               <a
                 key={link.name}
                 href={link.href}
-                className="px-3.5 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-200"
+                className="px-3.5 py-2 text-sm lg:text-lg font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-200"
               >
                 {link.name}
               </a>

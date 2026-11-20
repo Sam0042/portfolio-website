@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Social from './components/Social';
+import ScrollToTop from './components/scrollToTop';
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -40,12 +41,14 @@ function App() {
       <main>
         <Hero />
         <About />
-        <Skills />
+
         <Projects />
         <Social />
         <Contact />
       </main>
       <Footer />
+
+      <ScrollToTop />
     </div>
   );
 }

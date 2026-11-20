@@ -46,7 +46,7 @@ function Social() {
         },
     ];
     return (
-        <section id="social" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
+        <section id="social" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-slate-900/60 transition-colors duration-300">
             <div className="max-w-5xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center max-w-2xl mx-auto mb-16">
@@ -67,7 +67,7 @@ function Social() {
                             href={social.link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={`p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-lg ${social.color} group`}
+                            className={`p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-xl flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl ${social.color} group`}
                         >
                             <div className="w-14 h-14 rounded-2xl bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/80 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                                 {social.icon}

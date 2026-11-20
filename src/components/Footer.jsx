@@ -17,12 +17,7 @@ const Footer = () => {
           <span className="text-blue-600 dark:text-blue-400 font-medium">Vite</span>, &{' '}
           <span className="text-blue-600 dark:text-blue-400 font-medium">Tailwind CSS</span>
         </p>
-        <a
-          href="#home"
-          className="text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300"
-        >
-          Kembali ke Atas ↑
-        </a>
+
       </div>
     </footer>
   );

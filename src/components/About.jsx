@@ -59,36 +59,19 @@ const About = () => {
         </div>
 
         <div className="grid md:grid-cols-12 gap-10 lg:gap-12 items-center">
-          {/* Avatar / Visual Card */}
-          <div className="md:col-span-5 flex justify-center">
-            <div className="relative w-full max-w-sm">
-              {/* Decorative accent behind */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-indigo-500 rounded-3xl rotate-3 scale-95 opacity-70 blur-sm -z-10"></div>
-
-              <div className="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700/80 rounded-3xl p-8 shadow-xl text-center flex flex-col items-center">
-
-                <img src="https://avatars.githubusercontent.com/u/72549813?v=4" className='w-28 h-28 rounded-2xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center text-white text-4xl shadow-lg shadow-blue-500/30 mb-6' alt="" />
-
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white">Muhammad Hisyam Mubarak</h3>
-                {/* Container Logo & Nama Framework */}
-                <div className="flex flex-wrap items-center justify-center gap-3 mt-3 mb-4 text-slate-400">
-                  {techStack.map((tech, index) => (
-                    <div key={index} className="flex items-center gap-2 p-3 bg-gray-800 rounded-lg shadow">
-                      {/* Menggunakan tag img untuk menampilkan logo asli */}
-                      <img src={tech.icon} alt={`${tech.name} logo`} className="w-7 md:w-8 h-7 md:h-8 object-contain" />
-
-                    </div>
-                  ))}
-                </div>
-
-              </div>
-            </div>
+          {/* Avatar */}
+          <div className="md:col-span-5 flex justify-center items-center">
+            <img
+              src="https://avatars.githubusercontent.com/u/72549813?v=4"
+              className="w-64 h-64 rounded-full object-cover shadow-xl shadow-blue-500/20"
+              alt="Profile"
+            />
           </div>
 
           {/* Description*/}
           <div className="md:col-span-7">
             <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-6 text-justify">
-              Saya adalah lulusan sarjana komputer (S.Kom) jurusan teknik informatika dengan IPK 3.69/4.00 dan predikat sangat memuaskan di Sekolah Tinggi Teknologi Terpadu Nurul Fikri, saya memiliki fondasi rekayasa perangkat lunak yang kuat serta pemahaman mendalam terkait pengembangan web modern. Saat ini, saya aktif mengasah keterampilan dalam membangun ekosistem aplikasi web yang efisien, mulai dari pengembangan sisi frontend hingga perancangan sistem backend yang andal. Saya selalu bersemangat untuk mengubah kompleksitas logika pemrograman menjadi solusi digital yang solutif dan memberikan pengalaman pengguna terbaik.
+              Saya merupakan lulusan Sarjana Teknik Informatika dengan IPK 3,69/4,00. Memiliki fondasi pengetahuan di bidang teknologi informasi, khususnya rekayasa perangkat lunak, analisis sistem, pengelolaan basis data, serta pengujian perangkat lunak. Memiliki ketertarikan untuk terus mengembangkan keterampilan dan memperluas wawasan di berbagai bidang IT. Saya senang mempelajari teknologi baru, menganalisis permasalahan, serta menerapkan kemampuan teknis untuk menghasilkan solusi yang efektif dan bermanfaat
             </p>
           </div>
         </div>
