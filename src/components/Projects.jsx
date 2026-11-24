@@ -4,28 +4,28 @@ import React, { useState } from 'react';
 const Projects = () => {
   const projects = [
     {
-      title: 'Sistem Informasi Manajemen Masjid Jami Roudhotul Jannah',
-      description: 'Sistem Informasi Manajemen yang dikembangkan dengan tujuan membantu pencatatan keuangan dan kegiatan masjid.',
+      title: 'Jami Roudhotul Jannah Mosque Management Information System',
+      description: 'A Management Information System developed to facilitate the recording of mosque finances and activities',
       image: '🕌',
       tech: ['Laravel', 'MySQL', 'Bootstrap', 'Figma', 'UML', 'Black Box Testing', 'UAT'],
       demoLink: '',
       codeLink: 'https://github.com/Sam0042/sim-masjid-dummy.git',
       domain: 'Full-stack',
-      category: 'Proyek Skripsi'
+      category: 'Final Project'
     },
     {
       title: 'Nontons: Movies Website',
-      description: 'Website yang berisi kumpulan film yang diambil dari API TMDB',
+      description: 'A movie website featuring a collection of films retrieved from the TMDB API',
       image: '▶',
       tech: ['React', 'Vite', 'Tailwind CSS'],
       demoLink: 'https://nontons.vercel.app/',
-      codeLink: 'https://github.com/Sam0042/youtube-clone',
+      codeLink: 'https://github.com/Sam0042/nontons-movie-app.git',
       domain: 'Front-end',
       category: 'Personal Project'
     },
     {
       title: 'Youtube Homepage Clone',
-      description: 'Cloning Youtube dengan implementasi Rest API',
+      description: 'A YouTube homepage clone featuring REST API integration',
       image: '▶',
       tech: ['React', 'Vite', 'Tailwind CSS', 'Express JS', 'RestAPI'],
       demoLink: 'https://youtube-clone-frontend-mocha-iota.vercel.app/',
@@ -35,7 +35,7 @@ const Projects = () => {
     },
     {
       title: 'Portfolio Website',
-      description: 'Website portofolio pribadi yang berisi kumpulan portofolio, keahlian, pengenalan diri, dan kontak.',
+      description: 'A personal portfolio website showcasing projects, skills, personal introduction, and contact information',
       image: '💼',
       tech: ['React', 'Vite', 'Tailwind CSS'],
       demoLink: '/',
@@ -44,54 +44,54 @@ const Projects = () => {
       category: 'Personal Project'
     },
     {
-      title: 'Website Sekolah: SMK Nasional Depok',
-      description: 'Project website sekolah yang dibangun saat uji sertifikasi BNSP bidang Junior Web Developer.',
+      title: 'School Website: SMK Nasional Depok',
+      description: 'A school website developed as part of the BNSP Junior Web Developer certification assessment',
       image: '🏫',
       tech: ['Laravel', 'MySQL'],
       demoLink: '',
       codeLink: 'https://github.com/Sam0042/web-sekolah.git',
       domain: 'Full-stack',
-      category: 'Proyek Tes BNSP'
+      category: 'BNSP Test Project'
     },
     {
       title: 'RestfulAPI: Covid Patients Data (ExpressJS)',
-      description: 'RestfulAPI yang berisi data pasien yang dibangun menggunakan ExpressJS.',
+      description: 'A RESTful API containing COVID-19 patient data, developed using Express.js.',
       image: '📊',
       tech: ['Express.js', 'MySQL', 'JWT', 'Restful API'],
       demoLink: '',
       codeLink: 'https://github.com/Sam0042/covid-rest-api.git',
       domain: 'Back-end',
-      category: 'Tugas Kuliah'
+      category: 'College Project'
     },
     {
-      title: 'RestfulAPI: Covid Patients Data (Laravel)',
-      description: 'RestfulAPI yang berisi data pasien yang dibangun menggunakan Laravel.',
+      title: 'RESTful API: COVID-19 Patient Data (Laravel)',
+      description: 'A RESTful API containing COVID-19 patient data, developed using Laravel',
       image: '📊',
       tech: ['Laravel', 'MySQL', 'Restful API'],
       demoLink: '',
       codeLink: 'https://github.com/Sam0042/be-mid-project.git',
       domain: 'Back-end',
-      category: 'Tugas Kuliah'
+      category: 'College Project'
     },
     {
-      title: 'Covid Monitoring Website: Covidout',
-      description: 'Aplikasi eksplorasi monitoring total penebaran covid di Indonesia, menggunakan data yang difetch melalui API public.',
+      title: 'COVID-19 Monitoring Website: Covidout',
+      description: 'An interactive application for exploring and monitoring the total spread of COVID-19 in Indonesia using data retrieved from a public API.',
       image: '🏥',
       tech: ['React', 'Fetching API'],
       demoLink: 'https://covidout-app-sam0042.vercel.app/',
       codeLink: 'https://github.com/Sam0042/frontend-programming-uas.git',
       domain: 'Front-end',
-      category: 'Tugas Kuliah'
+      category: 'College Project'
     },
     {
       title: 'Movie Website: Moviequ',
-      description: 'Aplikasi eksplorasi film modern berbasis React. Memungkinkan pengguna menambah film dan menjelajah film populer dengan antarmuka yang responsif dan interaktif yang diambil dari API TMDB.',
+      description: 'A modern React-based movie application that allows users to add movies and explore popular films through a responsive and interactive interface, with movie data retrieved from the TMDB API',
       image: '🎬',
       tech: ['React', 'Fetching API'],
       demoLink: 'https://movie-database-sam0042.vercel.app/',
       codeLink: 'https://github.com/Sam0042/frontend-programming-Sam0042.git',
       domain: 'Front-end',
-      category: 'Tugas Kuliah'
+      category: 'College Project'
     },
   ];
 
@@ -118,10 +118,10 @@ const Projects = () => {
 
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-xs sm:text-sm font-semibold tracking-wider uppercase text-blue-600 dark:text-blue-400">
-            Portofolio
+            Projects
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 dark:text-white mt-2 mb-4">
-            Project Saya
+            My Projects
           </h2>
           <div className="w-12 h-1 bg-blue-600 dark:bg-blue-500 mx-auto rounded-full"></div>
         </div>

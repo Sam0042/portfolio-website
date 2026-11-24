@@ -13,12 +13,9 @@ function App() {
   const [theme, setTheme] = useState(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('theme');
-      if (saved) return saved;
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        return 'dark';
-      }
+      return saved || 'dark';
     }
-    return 'light';
+    return 'dark';
   });
 
   useEffect(() => {

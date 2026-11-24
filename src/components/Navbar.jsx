@@ -4,11 +4,11 @@ const Navbar = ({ theme, toggleTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Beranda', href: '#home' },
-    { name: 'Tentang', href: '#about' },
-    { name: 'Project', href: '#projects' },
+    { name: 'Home', href: '#home' },
+    { name: 'About', href: '#about' },
+    { name: 'Projects', href: '#projects' },
     { name: 'Social', href: '#social' },
-    { name: 'Kontak', href: '#contact' },
+    { name: 'Contact', href: '#contact' },
   ];
 
   return (

@@ -13,7 +13,7 @@ const Footer = () => {
           </span>
         </div>
         <p className="text-sm text-slate-500 dark:text-slate-400 text-center">
-          Dibuat dengan <span className="text-blue-600 dark:text-blue-400 font-medium">React</span>,{' '}
+          Made with <span className="text-blue-600 dark:text-blue-400 font-medium">React</span>,{' '}
           <span className="text-blue-600 dark:text-blue-400 font-medium">Vite</span>, &{' '}
           <span className="text-blue-600 dark:text-blue-400 font-medium">Tailwind CSS</span>
         </p>

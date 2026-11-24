@@ -18,7 +18,7 @@ const Hero = () => {
 
         {/* Subtitle */}
         <p className="text-base sm:text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-          Fresh Graduate Sarjana Teknik Informatika yang senang mengeksplorasi teknologi dan menemukan solusi melalui dunia digital
+          Computer Science fresh graduate who enjoys exploring technology and finding solutions in the digital world
         </p>
 
         {/* CTA Buttons */}
@@ -27,13 +27,13 @@ const Hero = () => {
             href="#projects"
             className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm sm:text-base shadow-lg shadow-blue-500/25 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl active:scale-95 text-center"
           >
-            Lihat Proyek Saya
+            Check My Projects
           </a>
           <a
             href="#contact"
             className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 font-semibold text-sm sm:text-base transition-all duration-300 hover:-translate-y-1 active:scale-95 text-center"
           >
-            Hubungi Saya
+            Contact Me
           </a>
         </div>
 
